@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
 
 <head>
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>Автокресла</title>
 	<meta name="description" content="">
 
 	<!-- Bootstrap v3.3.4 Grid Styles -->
@@ -34,7 +34,115 @@
 
 <body>
 	<!-- Здесь пишем код -->
-	
+	<header class="main-header"> <!-- Основная шапка-->	
+		<div class="container">	<!-- Обвертка хедера для центровки меню-->
+			<nav class="main-navigation"> <!-- Основная навигация -->
+				<ul>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>	
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block"> <!-- Блок Входа. Регистрация-->
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>	
+	</header>
+	<main class="container"> <!-- Основное содержание, между хедер и футер-->
+		<div class="index-logo"> <!-- Контейнер для логотипа,центровка-->
+			<img src="img/index-logo.png" width="368" height="204" alt="БараберЩоп Бородинский"> <!-- Содержательный тег, логотип-->
+		</div>
+		<section class="features"> <!-- потому что данный эл-т логичный -->
+			<div class="features-item"> 
+				<b class="features-name">Быстро</b> <!-- такой тег потому как этот заголовок нечего не нечет в себе но и проще в оформлении-->
+				<p>
+					Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - обладатель стильной стрижки - минутки!
+				</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Круто</b>
+				<p>
+					Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду фцтбола или кино! Во всяком случае внешне.
+				</p>
+			</div>
+			<div class="features-item">
+				<b class="features-name">Дорого</b>
+				<p>
+					Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+				</p>
+			</div>
+			
+		</section>
+		<div class="index-content"> <!-- Осн блок контента-->
+			<div class="index-content-left"> <!-- разделенный на две чати вертикальной линией-->
+				<h2 class="index-content-title">Новости</h2>
+				<ul class="news-preview">
+					<li>
+						<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во-время стрижки</p>
+						<time datetime="2016-11-02">2 Декабря</time>
+					</li>
+					<li>
+						<p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+						<time datetime="2016-11-04">4 Декабря</time>
+					</li>
+				</ul>
+				<a href="#" class="btn">Все новости</a>
+			</div>
+			<div class="index-content-right">
+				<h2 class="index-content-title">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-content"> <!-- Контейнер содержательных картинок -->
+						 <img src="img/photo-1.jpg" width="286" height="164" alt="">
+					</figure>
+					<button class="btn gallery-prev">Назад</button> <!--Нет перехода на другую страницу-->
+					<button class="btn gallery-next">Вперед</button>		
+						
+				</div>
+			</div> 	
+		</div>
+		<div class="index-content">
+			<div class="index-content-left">
+				<h2 class="index-content-title">Контактная информация</h2>
+				<p>
+					БарберЩоп «Бородинский»<br>
+					Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8<br>
+					Телефон: +7 44-44-55
+				</p>
+				<p>
+					Время работы:<br>
+					пн - пт: с 10-00 до 22-00<br>
+					сб - вс: с 10-00 до 19-00
+				</p>
+				<a href="#" class="btn">Как проехать</a>
+				<a href="#" class="btn">Обратная связь</a>
+			</div>
+			<div class="index-content-right">
+				<h2 class="index-content-title">Записаться</h2>
+				<p>
+					Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+				</p>				
+				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+					<input type="text" name="data" value="" placeholder="Дата">
+					<input type="text" name="time" value="" placeholder="Время">
+					<input type="text" name="name" value="" placeholder="Ваше Имя">
+					<input type="tel" name="phone" value="" placeholder="Телефон">	
+				</form>
+			</div>
+		</div>
+	</main>
+
 	<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
