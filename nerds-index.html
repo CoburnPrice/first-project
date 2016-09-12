@@ -34,148 +34,111 @@
 
 <body>
 	<!-- Здесь пишем код -->
-	<header class="main-header"> <!-- Основная шапка-->	
-		<div class="container">	<!-- Обвертка хедера для центровки меню-->
-			<nav class="main-navigation"> <!-- Основная навигация -->
-				<ul>
-					<li>
-						<a href="#">Информация</a>
-					</li>
-					<li>
-						<a href="#">Новости</a>	
-					</li>
-					<li>
-						<a href="#">Прайс-лист</a>
-					</li>
-					<li>
-						<a href="#">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="user-block"> <!-- Блок Входа. Регистрация-->
-				<a class="login" href="#">Вход</a>
-			</div>
-		</div>	
+	<header class="main">
+		<div class="index-logo">
+			<img src="#" alt="Логотип Нердс" width="200" height="200">
+		</div>
+		<nav class="main-navigation"> <!-- Основная навигация -->
+			<ul>
+				<li>
+					<a href="#">Студия</a>
+				</li>
+				<li>
+					<a href="#">Клиенты</a>	
+				</li>
+				<li>
+					<a href="#">Магазин</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+				<li>
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="user-block"> <!-- Блок Входа. Регистрация-->
+			<a class="login" href="#">Корзина</a>
+		</div>
+		<h1 class="main-header">Добро пожаловать в магазин макетов</h1>
 	</header>
-	<article class="main-container">
-		<header class="inserted">
-			<h1>Средства для ухода</h1>
-			<nav class="inserted-navigation">
-				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Магазин</a></li>
-					<li><a href="#">Средства для ухода</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div class="main-container">
-			<aside class="sidebar">
-				<section class="producers-product">
-					<h1>Производители</h1>
-					<p><input name="Baxter of califotnia" type="checkbox" value="Baxter of califotnia">Baxter of califotnia</p>
-					<p><input name="Mr Natty" type="checkbox" value="Mr Natty">Mr Natty</p>	
-					<p><input name="Suavecito" type="checkbox" value="Suavecito">Suavecito</p>
-					<p><input name="Malin Goetz" type="checkbox" value="Malin Goetz">Malin Goetz</p>
-					<p><input name="Murrays" type="checkbox" value="Murrays">Murrays</p>
-					<p><input name="American Prew" type="checkbox" value="American Prew">American Prew</p>				
-				</section>
-				<section class="group-product">
-					<h1>Группы товаров</h1>
-					<p><input name="britv" type="checkbox" value="britv">Бритвенные пренадлежности</p>	
-					<p><input name="Sredstva" type="checkbox" value="Sredstva">Средства для ухода</p>
-					<p><input name="Acsessuar" type="checkbox" value="Acsessuar">Аксессуары</p>
-
-				</section>
-				<button class="btn-see">Показать</button>
-			</aside>
-			<div class="main-product-gallery">
-				<figure class="product-card-1">
-				<img src="photo-1" width="200" height="200" alt="#">
-				<figcaption>Набор для путешествий Baxter of california</figcaption>
-				</figure>
-				<div class="price">
-					<span>2900руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
+	<div class="main-container">
+		<aside class="saidebar">
+			<section class="filter-cost">
+				<h2>Стоимость</h2>
+				<div class="filer-cost-batton">
+					<input type="button" name="pay-track">
+					<input type="text" name="from-cost" size="1">От<br>
+					<input type="text" name="before-cost" size="1">До<br>
 				</div>
-			
-				<figure class="product-card-2">
-				<img src="photo-2" width="200" height="200" alt="#">
-				<figcaption>Увлажняющий кондиционер Baxter of california</figcaption>
-				</figure>
-				<div class="price">
-					<span>750руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
-				</div>
-					
-				<figure class="product-card-3">
-				<img src="photo-3" width="200" height="200" alt="#">
-				<figcaption>Гель для волос Suavecito</figcaption>
-				</figure>
-				<div class="price">
-					<span>290руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
-				</div>
-					
-				<figure class="product-card-4">
-				<img src="photo-4" width="200" height="200" alt="#">
-				<figcaption>Глина для укладки волос American crew</figcaption>
-				</figure>
-				<div class="price">
-					<span>500руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
-				</div>
-					
-				<figure class="product-card-5">
-				<img src="photo-5" width="200" height="200" alt="#">
-				<figcaption>Гель для волос American Crew</figcaption>
-				</figure>
-				<div class="price">
-					<span>300руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
-				</div>
-					
-				<figure class="product-card-6">
-				<img src="photo-6" width="200" height="200" alt="#">
-				<figcaption>Набо для бритья Baxter of california</figcaption>
-				</figure>
-				<div class="price">
-					<span>3900руб.</span>
-					<a href="#" class="btn-bay">Купить</a>
-				</div>
+			</section>
+			<section class="filter-grid">
+				<h2>Сетка</h2>
+				<p><input name="adaptiv" type="checkbox" value="adaptiv">Адаптивная</p>
+				<p><input name="fix" type="checkbox" value="fix">Фиксированная</p>
+				<p><input name="ruber" type="checkbox" value="ruber">Резиновая</p>	
+			</section>
+			<section class="features">
+				<h2>Особенности</h2>
+				<p><input name="slider" type="checkbox" value="slider">Слайдер</p>
+				<p><input name="block-features" type="checkbox" value="block-features">Блок преимуществ</p>
+				<p><input name="news" type="checkbox" value="news">Новости</p>
+				<p><input name="gallery" type="checkbox" value="gallery">Галерея</p>
+				<p><input name="basket" type="checkbox" value="basket">Корзина</p>
+			</section>
+			<button class="filter-see">Показать</button>
+		</aside>	
+		<nav class="filter-product">
+			<h3 class="header-filter">Сортировать:</h2>
+			<ul>
+				<li><a href="#" class="btn">По цене</a></li>
+				<li><a href="#" class="btn">По типу</a></li>
+				<li><a href="#" class="btn">По функционалу</a></li>
+				<li><button class="top-gallery"></button></li>
+				<li><button class="bottom-gallery"></button></li>
+			</ul>
+		</nav>
+		<div class="container-gallery">
+			<div class="card-product1">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>	
+			</div>
+			<div class="card-product2">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>
+			</div>
+			<div class="card-product3">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>
+			</div>
+			<div class="card-product4">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>
+			</div>
+			<div class="card-product5">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>
+			</div>
+			<div class="card-product6">
+				<a href="#"><img src="#" alt="#" width="100" height="100"></a>
 			</div>
 		</div>
 		<div class="pager">
 			<a href="#" class="btn-1">1</a>
 			<a href="#" class="btn-2">2</a>
 			<a href="#" class="btn-3">3</a>
-			<a href="#" class="btn-4">4</a>
+			<a href="#" class="btn-4">Следующая</a>
 		</div>
-			
+	</div>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;max-width:100%;'><div id='gmap_canvas' style='height:400px;max-width:100%;'></div><div><small><a href="http://www.embedgooglemaps.com">Вставить Google Maps									наш сайт									нажмите здесь</a></small></div><div><small><a href="https://www.buyproxies.io/">High quality</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(55.77436829920324,37.74020954589843),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.77436829920324,37.74020954589843)});infowindow = new google.maps.InfoWindow({content:'<strong>as</strong><br>Moscow, Russia<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	<footer class="social-button">
+		<section class="left">
+			<a href="#" class="btn btn-vk"><img src="#" alt="#" width="50" height="50"></a>
+			<a href="#" class="btn btn-fb"><img src="#" alt="#" width="50" height="50"></a>
+			<a href="#" class="btn btn-inst"><img src="#" alt="#" width="50" height="50"></a>
+		</section>
+		<section class="footer-logo">
+			<h1>Давайте дружить, это выгодно</h1>
+			<h2>Скидка 10% для друзей социальных сетей.</h2>
+		</section>
 
-	</article>
-	<footer class="mian-footer">
-		<div class="container">
-			<section class="footer-contacts">
-				БарберЩоп «Бородинский»<br>
-				Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8<br>
-				<a href="#">Как нас найти</a><br>
-				Телефон: +7 44-44-55
-			</section>
-			<section class="footer-social"></section>
-				<p>Давайте дружить</p>
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
-				
-			<section class="footer-copyright">
-				<p>Розработано</p>
-				<a href="https://htmlacademy.ru" class="btn">Coburn Pice inc</a>
-			</section>		
-		</div>
 	</footer>
+
 
 	<div class="hidden"></div>
 
